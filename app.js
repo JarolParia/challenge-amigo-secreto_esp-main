@@ -1,3 +1,4 @@
+const letersValidation = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
 let friends =[];
 
 /*Función agregar amigo
@@ -7,20 +8,39 @@ y cuenta con validaciones para evitar nombre vacios o duplicados, arrojando para
 function agregarAmigo(){
     let friendName= document.getElementById('amigo').value;//Obtener el nombre ingresado en el input
 
+    /*validaciones
+    1. verifica que el campo no se encuentre vacio
+    2. verifica que el nombre ingresado solo contenga letras y espacios
+    3. verifica que el nombre no se encuentre ya en la lista de amigos
+    */
+
+    //1.
     if(friendName===""){
-        alert("Por favor, inserte un numbre.")
+        alert("Por favor, inserte un nombre.");
+        return;
     }
-    else if (friends.includes(friendName)){
+
+    //2.
+    if (!letersValidation.test(friendName)){
+        alert("El nombre solo puede contener letras y espacios.");
+        document.getElementById('amigo').value=""; //Limpiar el campo de entrada
+        return;
+    }
+
+    //3.
+    if (friends.includes(friendName)){
         alert("El amigo ya existe en la lista.");
         document.getElementById('amigo').value="";
+        return;
     }
-    else{
+
+    //si pasa todas las validaciones, se agrega el amigo al array
         friends.push(friendName);
         document.getElementById('amigo').value="";//Limpiar el campo de entrada
         document.getElementById('amigo').focus(); //Volver el foco al input para facilitar la entrada de nuevos amigos
         mostrarAmigos(); //Llamamos a la función para mostrar la lista actualizada.
-    }
 }
+
 
 /*Función mostrar amigos
 Esta función se encarga de crear dinamicamente los elementos de la lista de amigos y mostrar a estos en el DOM, permitiendo 
