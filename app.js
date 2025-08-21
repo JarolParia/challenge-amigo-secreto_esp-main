@@ -1,4 +1,4 @@
-const letersValidation = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+const lettersValidation = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
 let friends =[];
 
 /*Función agregar amigo
