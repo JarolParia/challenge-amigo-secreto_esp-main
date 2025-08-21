@@ -1,4 +1,14 @@
-# Amigo Secreto
+# 🔒Amigo Secreto
+
+![Status](https://img.shields.io/badge/Status-Finished-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Alura Latam](https://img.shields.io/badge/Alura%20Latam-007ACC?style=for-the-badge&logo=alura&logoColor=white)
+
 
 Este proyecto es una aplicación web sencilla para organizar un sorteo de "Amigo Secreto" entre amigos. Permite agregar nombres a una lista y seleccionar aleatoriamente un amigo.
 
@@ -35,9 +45,9 @@ Este proyecto es una aplicación web sencilla para organizar un sorteo de "Amigo
 
 ## Créditos
 
-- Desarrollado por [Tu Nombre].
+- Desarrollado por Jarol Paria.
 - Imágenes en la carpeta `assets`.
 
 ---
 
-¡Disfruta organizando tu
+¡Si te gustó este proyecto, no olvides darle una estrella! 
