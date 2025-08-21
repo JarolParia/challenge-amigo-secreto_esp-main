@@ -21,7 +21,7 @@ function agregarAmigo(){
     }
 
     //2.
-    if (!letersValidation.test(friendName)){
+    if (!lettersValidation.test(friendName)){
         alert("El nombre solo puede contener letras y espacios.");
         document.getElementById('amigo').value=""; //Limpiar el campo de entrada
         return;
